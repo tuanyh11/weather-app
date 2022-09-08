@@ -1,0 +1,7 @@
+export const actions = {
+    GET_CITY: 'GET_CITY',
+    GET_WEATHER: 'GET_WEATHER',
+    RES_GET_CITY: 'RES_GET_CITY',
+    RES_GET_WEATHER: 'RES_GET_WEATHER',
+    ERROR: 'ERROR'
+}
