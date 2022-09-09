@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800&family=Lato:wght@100;300;400;700;900&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+.spining {
+    animation: spining 800ms infinite;
+}
+
+@keyframes spining {
+    from {
+        transform: rotate(0)
+    }
+    
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    color: #fff;
+}

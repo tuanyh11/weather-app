@@ -13,3 +13,28 @@ export const getWeather = (city) => {
         city
     })
 }
+
+export const clearCityData = (city) => {
+    return ({
+        type: actions.CLEAR_CITY
+    })
+}
+
+export const isFetching = () => {
+    return ({
+        type: actions.IS_FETCHING
+    })
+}
+
+export const FETCHING_DONE = () => {
+    return ({
+        type: actions.FETCHING_DONE
+    })
+}
+
+export const setCurrentCity = (city) => {
+    return ({
+        type: actions.SET_CUREENT_CITY,
+        city
+    })
+}

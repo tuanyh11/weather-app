@@ -2,7 +2,7 @@ import React from 'react'
 
 const DropdownItem = ({value, handleClick}) => {
   return (
-    <div onClick={() => handleClick(value)}>
+    <div className='cursor-pointer text-lg hover:text-white' onClick={() => handleClick(value)}>
         {value?.name}
     </div>
   )
