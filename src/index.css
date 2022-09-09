@@ -21,5 +21,6 @@
 
 body {
     font-family: 'Jost', sans-serif;
-    color: #fff;
+    /* color: #fff; */
+    background: #fff;
 }

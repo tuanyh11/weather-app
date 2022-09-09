@@ -34,7 +34,7 @@ const defaultLocation = [
 ]
 
 const getDate = (time) => {
-  const date = new Date(time * 1000).toLocaleString('en-US', {weekday:'long', timeZone: 'Asia/Bangkok', hour: 'numeric', minute: 'numeric', hour12: true })
+  const date = new Date(time * 1000).toLocaleString('en-US', {weekday:'long', hour: 'numeric', minute: 'numeric', hour12: true })
   return date
 }
 
