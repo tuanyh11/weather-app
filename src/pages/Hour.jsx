@@ -8,8 +8,8 @@ const Hour = ({hourData}) => {
   return (
     <div>
       <Title title={'Hour'}/>
-      <div className='bg-white p-5 rounded-md'>
-        <ResponsiveContainer height='100%' width='100%' aspect={4.0/2.0}>
+      <div className='bg-white px-2 py-5 lg:p-5 rounded-md'>
+        <ResponsiveContainer height='100%' width='100%' aspect={4.0/3.0}>
           <LineChart  width={800} height={600} data={hourData}>
             <Line name='Temp &#8451;' dataKey="temp" stroke='#2196f3' type="monotone" strokeWidth={4}></Line>
             <Line name='Feeks Like &#8451;' dataKey="feels_like" stroke='green' type="monotone" strokeWidth={4}></Line>

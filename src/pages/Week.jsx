@@ -63,7 +63,7 @@ const Week = ({weekWeatherData}) => {
   return (
     <div>
       <Title title={'Week'}/>
-      <div className="grid grid-cols-4 gap-4 auto-rows-fr">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-fr">
         {weekWeatherData.map((weather, i) => {
           const date = getDate(weather.dt, {weekday:'short', month: 'numeric', day: 'numeric', year: 'numeric' })
           return <CardWeather key={i} body={() => renderBody(weather)} handleOnclick={() => handleSetWeather({...weather, id: i})}  hover={true}  heading={date} active={currentWeather.id === i}/>
@@ -71,7 +71,7 @@ const Week = ({weekWeatherData}) => {
       </div>
       {currentWeather && (
         <div className='mt-10 '>
-          <div className="grid grid-cols-2 bg-white p-5 text-start text-slate-500 rounded-md">
+          <div className="grid grid-cols-1 md:grid-cols-2 bg-white p-5 text-start text-slate-500 rounded-md">
             <div>
               <p className="text-lg py-2">Temp: <span className="text-main text-2xl font-medium" dangerouslySetInnerHTML={{__html: `${currentWeather.min}&#8451; - ${currentWeather.max}&#8451;`}} /></p>
               <p className="text-lg py-2">Humidity: <span className="text-main text-2xl font-medium">{currentWeather.humidity} &#x25;</span></p>

@@ -15,7 +15,7 @@ const index = () => {
           <div className='w-[100%] lg:w-[60%] xl:w-[70%] lg:p-10 '>
             <Outlet />
           </div>
-          <div className='lg:w-[40%]  xl:w-[30%] hidden lg:block  absolute right-0 top-0 h-[100vh] bg-[rgb(41,64,93)] ' >
+          <div className='lg:w-[40%]  xl:w-[30%] hidden lg:block  fixed right-0 top-0 bottom-0 bg-[rgb(41,64,93)] h-full' >
             <Sidebar />
           </div>
         </div>
