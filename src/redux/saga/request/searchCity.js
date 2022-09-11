@@ -1,8 +1,8 @@
-import API from "../../../api";
 import axios from 'axios'
+import { searchListCities } from '../../../api'
 
 const searchCity = (city) => {
-   return axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${encodeURIComponent(city)}&type=hour&limit=5&units=metric&appid=${process.env.REACT_APP_API_KEY}`)
+   return searchListCities(city)
         .then(response  => ({response }))
         .catch(error  => ({error }))
 }

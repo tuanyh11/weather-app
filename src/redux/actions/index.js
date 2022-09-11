@@ -1,11 +1,19 @@
 import {actions} from '../contants'
 
+export const searchCities = (city) => {
+    return ({
+        type: actions.SEARCH_CITIES,
+        city
+    })
+}
+
 export const getCity = (city) => {
     return ({
         type: actions.GET_CITY,
         city
     })
 }
+
 
 export const getWeather = (city) => {
     return ({

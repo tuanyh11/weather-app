@@ -1,8 +1,7 @@
 
-import API from './../../../api/index';
+import  { getWeatherDetail } from './../../../api/index';
 const getWeather = (city) => {
-    console.log(city)
-  return API.get(`/onecall?lat=${city.lat}&lon=${city.lon}&appid=${process.env.REACT_APP_API_KEY}`)
+  return getWeatherDetail(city)
             .then(response => ({response}))
             .catch(error => ({error}))
 }
