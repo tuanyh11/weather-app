@@ -11,7 +11,7 @@ function App() {
     <div className="App" >
       <Routes>
         <Route path='/' element={
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<div className="text-main">Loading...</div>}>
             <MainLayout/>
           </Suspense>
         }>
@@ -19,12 +19,12 @@ function App() {
               <Today/>
           }/>
           <Route path='week' element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div className="text-main">Loading...</div>}>
               <Week/>
             </Suspense>
           }/>
           <Route path='hour' x element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div className="text-main">Loading...</div>}>
               <Hour/>
             </Suspense>
           }/>
